@@ -31,6 +31,7 @@ function step() {
 		closestPoints.push(point);
 	}
 	context.stroketyle = "#000000";
+	context.lineWidth = 4;
 	context.beginPath();
 	for (const point of points) {
 		closestPoints.sort((p1, p2) => {
