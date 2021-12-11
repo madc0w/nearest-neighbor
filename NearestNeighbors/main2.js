@@ -1,5 +1,5 @@
-let velFactor = 128;
-let numPoints = 200;
+let velFactor = 200;
+let numPoints = 400;
 const points = [];
 let canvas, context;
 let stepNum = 0;
@@ -31,7 +31,7 @@ function step() {
 		closestPoints.push(point);
 	}
 	context.stroketyle = "#000000";
-	context.lineWidth = 4;
+	context.lineWidth = 2;
 	context.beginPath();
 	for (const point of points) {
 		closestPoints.sort((p1, p2) => {
